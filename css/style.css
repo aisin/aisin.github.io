@@ -263,8 +263,9 @@ h3.about {color:#777;margin-top:20px;font-size:22px;margin-bottom:10px}
 
 /**************Tags Page**************/
 .page-title{font-size:20px;border-bottom:1px solid #ccc;padding-bottom:10px;margin-bottom:20px;}
-#tag_cloud{margin-bottom:1em;}
+#tag_cloud{margin-bottom:1em;line-height:1.8em;}
 #tag_cloud a:hover{color:#333 !important;text-decoration:none;}
+#tag_cloud a:after{content:"<span>|</span>";}
 
 /**************目录导航**************/
 #menuIndex {overflow:auto;}
