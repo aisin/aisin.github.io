@@ -255,11 +255,14 @@ pre ol{margin-left:25px;list-style-type:decimal;}
 .wiki ul li{margin-bottom:5px;}
 .wiki ul ul{list-style:circle;margin-top:10px;margin-bottom:10px;}
 
-/***************contact style*************/
+/***************comment style*************/
 #duoshuo_container {font-size:12px;}
 #duoshuo_container a.comment{font-size:14px;}
 h3.about {color:#777;margin-top:20px;font-size:22px;margin-bottom:10px}
 .about-link a {margin-right:10px;font-weight:bold;font-style:italic;font-size:13px;color:#E50053}
+
+/**************Tags Page**************/
+.page-title{font-size:14px;border:1px solid #999;}
 
 /**************目录导航**************/
 #menuIndex {overflow:auto;}

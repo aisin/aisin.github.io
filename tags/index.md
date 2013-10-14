@@ -7,6 +7,7 @@ layout: home
         <div id="content" class="inner">
 
 			<div id='tag_cloud'>
+			<h1 class="page-title">Tags</h1>
 			{% for tag in site.tags %}
 			<a href="#{{ tag[0] }}" title="{{ tag[0] }}" rel="{{ tag[1].size }}">{{ tag[0] }}</a>
 			{% endfor %}
