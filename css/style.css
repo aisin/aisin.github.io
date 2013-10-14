@@ -22,7 +22,7 @@ sup{vertical-align:text-top;}
 sub{vertical-align:text-bottom;}
 
 html {height: 100%;}
-body{font:16px 'Microsoft Yahei',Arial,sans-serif;height: 100%;color: #333;background: #fff;}
+body{font:14px 'Microsoft Yahei',Arial,sans-serif;height: 100%;color: #333;background: #fff;}
 @media screen and (max-width: 1040px){
 	body{margin: 0 20px;}
 }
@@ -163,7 +163,7 @@ article {border-bottom: 1px solid #ddd;padding:15px 0;position: relative;}
 @media screen and (max-width: 600px) {
 	article {padding: 15px 0;}
 }
-article h1.title{line-height:35px;margin-bottom:10px;margin-left:0px;font-size:1em;}
+article h1.title{line-height:35px;margin-bottom:10px;margin-left:0px;font-size:1.2em;}
 article h1.title a{color: #333;-webkit-transition: color 0.3s;-moz-transition: color 0.3s;-o-transition: color 0.3s;transition: color 0.3s;
 }
 article h1.title a:hover{color: #2571b8;-webkit-transition: color 0.3s;-moz-transition: color 0.3s;-o-transition: color 0.3s;transition: color 0.3s;}
