@@ -22,7 +22,7 @@ sup{vertical-align:text-top;}
 sub{vertical-align:text-bottom;}
 
 html {height: 100%;}
-body{font:14px 'Microsoft Yahei',Arial,sans-serif;height: 100%;color: #333;background: #fff;}
+body{font:14px Georgia,"Times New Roman",'Microsoft Yahei',Arial;height: 100%;color: #333;background: #fff;}
 @media screen and (max-width: 1040px){
 	body{margin: 0 20px;}
 }
