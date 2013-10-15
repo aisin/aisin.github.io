@@ -83,78 +83,14 @@ a.external:hover {background-position:right -15px;}
 #sub-nav .social a {-moz-border-radius: 50%;-webkit-border-radius: 50%;-o-border-radius: 50%;-ms-border-radius: 50%;-khtml-border-radius: 50%;border-radius: 50%;display: -moz-inline-box;-moz-box-orient: vertical;display: inline-block;vertical-align: middle;*vertical-align: auto;text-indent: -9999px;margin-right: 15px;opacity: 0.5;width: 28px;height: 28px;-moz-transition: 0.3s;-webkit-transition: 0.3s;-o-transition: 0.3s;transition: 0.3s;}
 #sub-nav .social a {*display: inline;}
 #sub-nav .social a:hover {opacity: 1;}
-#sub-nav .social a.facebook {
-	background: url('/images/social/facebook.png?1381007798') center no-repeat #3b5998;
-	border: 1px solid #3B5998;
-}
-#sub-nav .social a.facebook:hover {border: 1px solid #2d4373;}
-#sub-nav .social a.google {
-	background: url('/images/social/google.png?1381007798') center no-repeat #c83d20;
-	border: 1px solid #C83D20;
-}
-
-#sub-nav .social a.google:hover {
-	border: 1px solid #9c3019;
-}
-
-#sub-nav .social a.twitter {
-	background: url('/images/social/twitter.png?1381007798') center no-repeat #55cff8;
-	border: 1px solid #55CFF8;
-}
-
-#sub-nav .social a.twitter:hover {
-	border: 1px solid #24c1f6;
-}
-
-#sub-nav .social a.github {
-	background: url('/images/social/github.png?1381007798') center no-repeat #afb6ca;
-	border: 1px solid #afb6ca;
-}
-
-#sub-nav .social a.github:hover {
-	border: 1px solid #909ab6;
-}
-
-#sub-nav .social a.linkedin {
-	background: url('/images/social/linkedin.png?1381007798') center no-repeat #005a87;
-	border: 1px solid #005A87;
-}
-
-#sub-nav .social a.pinterest {
-	background: url('/images/social/pinterest.png?1381007798') center no-repeat #be4037;
-	border: 1px solid #be4037;
-}
-
-#sub-nav .social a.pinterest:hover {
-	border: 1px solid #96332c;
-}
-
-#sub-nav .social a.delicious {
-	background: url('/images/social/delicious.png?1381007798') center no-repeat #3271cb;
-	border: 1px solid #3271cb;
-}
-
-#sub-nav .social a.delicious:hover {
-	border: 1px solid #285aa2;
-}
-
-#sub-nav .social a.pinboard {
-	background: url('/images/social/pinboard.png?1381007798') center no-repeat #0066c8;
-	border: 1px solid #3a729f;
-}
-
-#sub-nav .social a.pinboard:hover {
-	border: 1px solid #0052cc;
-}
-
-#sub-nav .social a.rss {
-	background: url('/images/social/rss.png?1381007798') center no-repeat #ef7522;
-	border: 1px solid #EF7522;
-}
-
-#sub-nav .social a.rss:hover {
-	border: 1px solid #cf5d0f;
-}
+#sub-nav .social a.google {background:url('../images/google.png') center no-repeat #c83d20;border:1px solid #C83D20;}
+#sub-nav .social a.google:hover{border:1px solid #9c3019;}
+#sub-nav .social a.twitter {background: url('../images/twitter.png') center no-repeat #55cff8;border: 1px solid #55CFF8;}
+#sub-nav .social a.twitter:hover{border: 1px solid #24c1f6;}
+#sub-nav .social a.github{background:url('../images/github.png') center no-repeat #afb6ca;border: 1px solid #afb6ca;}
+#sub-nav .social a.github:hover{border: 1px solid #909ab6;}
+#sub-nav .social a.rss{background: url('../images/rss.png') center no-repeat #ef7522;border: 1px solid #EF7522;}
+#sub-nav .social a.rss:hover{border: 1px solid #cf5d0f;}
 
 article {border-bottom: 1px solid #ddd;padding:15px 0;position: relative;}
 @media screen and (max-width: 800px) {
