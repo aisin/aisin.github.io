@@ -262,10 +262,13 @@ h3.about {color:#777;margin-top:20px;font-size:22px;margin-bottom:10px}
 .about-link a {margin-right:10px;font-weight:bold;font-style:italic;font-size:13px;color:#E50053}
 
 /**************Tags Page**************/
-.page-title{font-size:20px;border-bottom:1px solid #ccc;padding-bottom:10px;margin-bottom:20px;}
+.page-title{font-size:20px;border-bottom:1px solid #ccc;padding-bottom:10px;margin:1.5em 0 0.5em 0;}
 #tag_cloud{margin-bottom:1em;line-height:1.8em;}
 #tag_cloud a:hover{color:#333 !important;text-decoration:none;}
 #tag_cloud a:after{content:"|";}
+.listing-seperator{line-height:2em;font-size:1.2em;}
+.listing-item{}
+.listing-item time{color:#999;}
 
 /**************目录导航**************/
 #menuIndex {overflow:auto;}
