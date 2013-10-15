@@ -266,9 +266,9 @@ h3.about {color:#777;margin-top:20px;font-size:22px;margin-bottom:10px}
 #tag_cloud{margin-bottom:1em;line-height:1.8em;}
 #tag_cloud a:hover{color:#333 !important;text-decoration:none;}
 #tag_cloud a:after{content:"|";}
-.listing-seperator{line-height:2em;font-size:1.2em;}
-.listing-item{}
-.listing-item time{color:#999;}
+.listing-seperator{line-height:2em;font-size:1em;}
+.listing-item{line-height:2em;}
+.listing-item time{color:#999;margin-right:1em;}
 
 /**************目录导航**************/
 #menuIndex {overflow:auto;}
