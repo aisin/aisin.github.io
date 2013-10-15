@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 ---
 <div class="mid-col">
     <div class="mid-col-container">
