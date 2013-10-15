@@ -1,4 +1,5 @@
 ---
+title : tags
 layout: page
 ---
 <div class="mid-col">
