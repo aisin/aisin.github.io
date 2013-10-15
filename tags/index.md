@@ -1,7 +1,6 @@
 ---
 layout: home
 ---
-
 <div class="mid-col">
     <div class="mid-col-container">
         <div id="content" class="inner">
