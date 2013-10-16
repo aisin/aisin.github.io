@@ -131,8 +131,7 @@ footer {padding: 15px 0;border-top: 1px solid #fff;text-align: center;font-size:
 .container .mid-col footer.inner {text-align: center;margin: 0px 70px 0px 40px;width: auto;}
 .container .mid-col .mid-col-container {padding: 0px 70px 0px 40px;}
 .container .mid-col .mid-col-container #content {width: 100%;}
-.container .left-col:hover {opacity: 1;}
-.container .left-col {width:23%;position:fixed;opacity:.8;-webkit-transition:all .2s ease-in;-moz-transition:all .2s ease-in;-o-transition:all .2s ease-in;-ms-transition:all .2s ease-in;transition:all .2s ease-in;height:100%;background:#3D4349 url(../images/left_bg_new.png) repeat;}
+.container .left-col {width:23%;position:fixed;-webkit-transition:all .2s ease-in;-moz-transition:all .2s ease-in;-o-transition:all .2s ease-in;-ms-transition:all .2s ease-in;transition:all .2s ease-in;height:100%;background:#3D4349 url(../images/left_bg_new.png) repeat;}
 .container .left-col .intrude-less {width: 80%;}
 .container .left-col #header .profilepic img {border-radius: 50%;-moz-border-radius: 50%;-webkit-border-radius: 50%}
 .container .left-col #header #sub-nav {margin-top: 10px;}
