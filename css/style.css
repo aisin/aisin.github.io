@@ -109,7 +109,7 @@ article .entry-content {line-height: 2;text-align: justify;margin-left: 0px;}
 }
 .post .meta {line-height: 2;font-size: 0.9em;position: relative;float: right;top: 0px;color: #555;text-align: right;width: auto;}
 @media screen and (max-width: 800px) {
-	.post .meta{position:static;width:auto;color:#f00;}
+	.post .meta{position:static;width:auto;}
 }
 .post .meta a {color: #999;-moz-transition: 0.3s;-webkit-transition: 0.3s;-o-transition: 0.3s;transition: 0.3s;}
 .post .meta a:hover {color: #666;}
@@ -141,13 +141,15 @@ footer {padding: 15px 0;border-top: 1px solid #fff;text-align: center;font-size:
 }
 .aboutme p{line-height: 1.5em;color: #ccc;margin-top: 10px;}
 @media screen and (max-width: 700px) {
+	.container .mid-col{float:none;width:100%;right:0;}
+}
+@media screen and (max-width: 700px) {
 	.container .left-col {position: relative;width: 100%;opacity: 1;}
 	.container .left-col .intrude-less {margin: auto auto;}
 	.container .left-col #header {padding: 40px 0px;text-align: center;}
 	.container .left-col #header #sub-nav {display: block;}
 	.container .left-col #header #main-nav ul {display: block;}
-	.container .left-col #header #main-nav ul li {display: inline;margin-right:10px;}
-	.container .mid-col{float:none;width:100%;right:0;}
+	.container .left-col #header #main-nav ul li {display:inline;margin-right:10px;}
 	.container .mid-col .mid-col-container{padding:15px;}
 	.container .mid-col .mid-col-container #content article .meta{float:none;}
 }
