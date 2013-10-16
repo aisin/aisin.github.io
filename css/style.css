@@ -141,7 +141,7 @@ footer {padding: 15px 0;border-top: 1px solid #fff;text-align: center;font-size:
 }
 .aboutme p{line-height: 1.5em;color: #ccc;margin-top: 10px;}
 @media screen and (max-width: 1024px) {
-	.container .mid-col{float:none;width:100%;right:0;}
+	.container .mid-col{width:77%;right:0;}
 }
 @media screen and (max-width: 700px) {
 	.container .left-col {position: relative;width: 100%;opacity: 1;}
@@ -150,6 +150,7 @@ footer {padding: 15px 0;border-top: 1px solid #fff;text-align: center;font-size:
 	.container .left-col #header #sub-nav {display: block;}
 	.container .left-col #header #main-nav ul {display: block;}
 	.container .left-col #header #main-nav ul li {display:inline;margin-right:10px;}
+	.container .mid-col{float:none;width:100%;right:0;}
 	.container .mid-col .mid-col-container{padding:15px;}
 	.container .mid-col .mid-col-container #content article .meta{float:none;}
 }
