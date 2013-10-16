@@ -5,29 +5,27 @@ layout : home
 <div class="mid-col">
     <div class="mid-col-container">
         <div id="content" class="inner">
-            <div itemscope itemtype="http://schema.org/Blog">
-                {% for post in site.categories.blog %}
-                <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-                    <div class="meta">
-                        <div class="date">
-                            <time>{{ post.date | date:"%Y-%m-%d" }}</time>
-                        </div>
-                        <!--
-                        <div class="tags">
-                        {% if page.tags %}
-                        tags:
-                        {% for tag in page.tags %}
-                        <a href="/tags/#{{ tag }}" title="{{ tag }}">{{ tag }}</a>&nbsp;
-                        {% endfor %}
-                        {% endif %}
-                        </div>
-                        -->
+            {% for post in site.categories.blog %}
+            <article class="post">
+                <div class="meta">
+                    <div class="date">
+                        <time>{{ post.date | date:"%Y-%m-%d" }}</time>
                     </div>
-                    <h1 class="title" itemprop="name"><a href="{{ post.url }}" itemprop="url">{{ post.title }}</a></h1>
-                    <div class="entry-content" itemprop="articleBody">{{ post.description }}</div>
-                </article>
-                {% endfor %}
-            </div>
+                    <!--
+                    <div class="tags">
+                    {% if page.tags %}
+                    tags:
+                    {% for tag in page.tags %}
+                    <a href="/tags/#{{ tag }}" title="{{ tag }}">{{ tag }}</a>&nbsp;
+                    {% endfor %}
+                    {% endif %}
+                    </div>
+                    -->
+                </div>
+                <h1 class="title"><a href="{{ post.url }}" itemprop="url">{{ post.title }}</a></h1>
+                <div class="entry-content">{{ post.description }}</div>
+            </article>
+            {% endfor %}
             <!--
             <div id="post-pagination" class="paginator">
 
