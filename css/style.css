@@ -29,7 +29,7 @@ body{font:14px Georgia,"Times New Roman",'Microsoft Yahei',Arial;height: 100%;co
 @media screen and (max-width: 600px) {
 	body{font-size: 13px;}
 }
-a {text-decoration: none;outline-width: 0;color: #258fb8;}
+a {text-decoration: none;outline-width: 0;color:#90d5ff;}
 a:hover {text-decoration: underline;}
 a.external {padding-right:13px;background:url('../images/icons.gif') no-repeat right 1px;}
 a.external:hover {background-position:right -15px;}
@@ -43,7 +43,7 @@ a.external:hover {background-position:right -15px;}
 	#header {height: auto;position: relative;padding-bottom: 10px;}
 }
 #header a {color: #EFEFEF;text-shadow: 0 1px #333;-moz-transition: color 0.3s;-webkit-transition: color 0.3s;-o-transition: color 0.3s;transition: color 0.3s;}
-#header a:hover {color: #258fb8;}
+#header a:hover {color:#90d5ff;}
 #header h1 {float:none;font-weight:400;font-size: 30px;}
 @media screen and (max-width: 1040px) {
 	#header h1 {float: none;}
@@ -61,7 +61,7 @@ a.external:hover {background-position:right -15px;}
 	#main-nav>ul>li {margin-left: 0;margin-right: 50px;}
 	#main-nav>ul>li:last-of-type {margin-right: 0;}
 }
-#main-nav>ul>li:hover>a {color: #258fb8;}
+#main-nav>ul>li:hover>a {color:#90d5ff;}
 #main-nav>ul>li>a {padding: 38px 0;margin-top: -38px;}
 @media screen and (max-width: 1040px) {
 	#main-nav>ul>li>a {padding: 18px 0;}
