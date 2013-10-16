@@ -140,7 +140,7 @@ footer {padding: 15px 0;border-top: 1px solid #fff;text-align: center;font-size:
 	body {margin:0;}
 }
 .aboutme p{line-height: 1.5em;color: #ccc;margin-top: 10px;}
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1024px) {
 	.container .mid-col{float:none;width:100%;right:0;}
 }
 @media screen and (max-width: 700px) {
