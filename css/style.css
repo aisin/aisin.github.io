@@ -105,11 +105,11 @@ article h1.title a{color: #333;-webkit-transition: color 0.3s;-moz-transition: c
 article h1.title a:hover{color: #2571b8;-webkit-transition: color 0.3s;-moz-transition: color 0.3s;-o-transition: color 0.3s;transition: color 0.3s;}
 article .entry-content {line-height: 2;text-align: justify;margin-left: 0px;}
 @media screen and (max-width: 800px) {
-	.post h1.title,.post .entry-content {margin-left: 0;}
+	.post h1.title,.post .entry-content{margin-left:0;}
 }
 .post .meta {line-height: 2;font-size: 0.9em;position: relative;float: right;top: 0px;color: #555;text-align: right;width: auto;}
 @media screen and (max-width: 800px) {
-	.post .meta{position:static;width:auto;}
+	.post .meta{position:static;width:auto;color:#f00;}
 }
 .post .meta a {color: #999;-moz-transition: 0.3s;-webkit-transition: 0.3s;-o-transition: 0.3s;transition: 0.3s;}
 .post .meta a:hover {color: #666;}
