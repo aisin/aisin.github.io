@@ -14,14 +14,14 @@ th{text-align:inherit;}
 img{border:0;}
 abbr,acronym{border:0;font-variant:normal;}
 del{text-decoration:line-through;}
-address,caption,cite,code,dfn,em,th,var {font-style:normal;font-weight:500;}
-ol,ul {list-style:none;}
+address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:500;}
+ol,ul{list-style:none;}
 caption,th{text-align:left;}
-q:before,q:after {content:'';}
+q:before,q:after{content:'';}
 sup{vertical-align:text-top;}
 sub{vertical-align:text-bottom;}
 
-html {height: 100%;}
+html{height: 100%;}
 body{font:14px Georgia,"Times New Roman",'Microsoft Yahei',Arial;height: 100%;color: #333;background: #fff;}
 @media screen and (max-width: 1040px){
 	body{margin: 0 20px;}
@@ -29,7 +29,7 @@ body{font:14px Georgia,"Times New Roman",'Microsoft Yahei',Arial;height: 100%;co
 @media screen and (max-width: 600px) {
 	body{font-size: 13px;}
 }
-a {text-decoration: none;outline-width: 0;color:#90d5ff;}
+a {text-decoration: none;outline-width: 0;color:#2571b8;}
 a:hover {text-decoration: underline;}
 a.external {padding-right:13px;background:url('../images/icons.gif') no-repeat right 1px;}
 a.external:hover {background-position:right -15px;}
