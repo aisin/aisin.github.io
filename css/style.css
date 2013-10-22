@@ -155,8 +155,8 @@ footer {padding: 15px 0;border-top: 1px solid #fff;text-align: center;font-size:
 }
 
 /*post.html*/
-.navigation{width:100%;background:#ececec;padding:0.5em 0;margin-bottom:1.5em;border-radius:5px;}
-.navigation ul li{float:left;list-style:none;margin-right:2em;}
+.entry .navigation{width:100%;background:#ececec;padding:0.5em 0;margin-bottom:1.5em;border-radius:5px;}
+.entry .navigation ul li{float:left;list-style:none;margin-right:2em;}
 .entry-title,.entry-title a {font-size:30px;font-weight:bold;margin-bottom:6px;color:#000;text-align:center;}
 .entry-title a:hover {text-decoration:none;}
 .entry-date {text-align:center;color:#999;margin-bottom:60px;font-size:14px;}
