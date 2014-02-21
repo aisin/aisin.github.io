@@ -29,35 +29,31 @@ layout : home
             <!---->
             <div id="post-pagination" class="paginator">
 
-              {% if paginator.previous_page %}
-                {% if paginator.previous_page == 1 %}
-                <a href="/">&lt;前页</a>
-                {% else %}
-                <a href="/page{{paginator.previous_page}}">&lt;前页</a>
-                {% endif %}
-              {% else %}
-                <span class="previous disabled">&lt;前页</span>
-              {% endif %}
+              {% if paginator.total_pages > 1 %}
+				  <nav id="pages_panel" role="pagination" data-total-pages="{{ paginator.total_pages }}" data-current-page="{{ paginator.page }}" data-total-posts="{{ paginator.total_posts }}">
+					<div>
+					{% if paginator.previous_page %}
+					  <a class="page-prev" href="/{%if paginator.previous_page > 1 %}page/{{ paginator.previous_page }}/{% endif %}">&laquo; 上一页</a>
+					{% endif %}
 
-                  {% if paginator.page == 1 %}
-                  <span class="current-page">1</span>
-                  {% else %}
-                  <a href="/">1</a>
-                  {% endif %}
+					{% for page in (1..paginator.total_pages) %}
+					  {% if page == paginator.page %}
+						<span class="page-num-current">{{ page }}</span>
+					  {% else %}
+						<a class="page-num" data-page="{{ page }}" href="/{%if page > 1 %}page/{{ page }}/{% endif %}">{{ page }}</a>
+					  {% endif %}
+					{% endfor %}
 
-                {% for count in (2..paginator.total_pages) %}
-                  {% if count == paginator.page %}
-                  <span class="current-page">{{count}}</span>
-                  {% else %}
-                  <a href="/page{{count}}">{{count}}</a>
-                  {% endif %}
-                {% endfor %}
-
-              {% if paginator.next_page %}
-                <a class="next" href="/page{{paginator.next_page}}">后页></a>
-              {% else %}
-                <span class="next disabled" >后页&gt;</span>
-              {% endif %}
+					{% if paginator.next_page %}
+					  <a class="page-next" href="/page/{{ paginator.next_page }}/">下一页 &raquo;</a>
+					{% endif %}
+					  <br />
+					  <span style="display: inline-block; float: right; font-size: 12px; color: #999;">
+					  本博合计 {{ paginator.total_posts }} 篇文章，最后更新于 {{ site.time }}。
+					  </span>
+					</div>
+				  </nav>
+				{% endif %}
               (共{{ paginator.total_posts }}篇)
             </div><!---->
             <footer id="footer" class="inner">Copyright &copy; 2013 Aisin's Blog All Rights Reserved.</footer>
