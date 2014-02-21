@@ -29,29 +29,35 @@ layout : home
             <!---->
             <div id="post-pagination" class="paginator">
 
-              <nav id="pages">
-				{% if paginator.previous_page %}
-					{% if paginator.previous_page == 1 %}
-						<a href="{{site.base_url}}/" class="previous">&lt;&lt; Vorige Seite</a>
-					{% else %}
-						<a href="{{site.base_url}}/page{{paginator.previous_page}}" class="previous">&lt;&lt; Vorige Seite</a>
-					{% endif %}
-				{% else %}
-					<span class="previous">&lt;&lt; Vorige Seite</span>
-				{% endif %}
+              {% if paginator.previous_page %}
+                {% if paginator.previous_page == 1 %}
+                <a href="/">&lt;前页</a>
+                {% else %}
+                <a href="/page{{paginator.previous_page}}">&lt;前页</a>
+                {% endif %}
+              {% else %}
+                <span class="previous disabled">&lt;前页</span>
+              {% endif %}
 
-				&bull;
+                  {% if paginator.page == 1 %}
+                  <span class="current-page">1</span>
+                  {% else %}
+                  <a href="/">1</a>
+                  {% endif %}
 
-				Seite {{paginator.page}} von {{paginator.total_pages}} (insgesamt {{ paginator.total_posts }} Posts)
+                {% for count in (2..paginator.total_pages) %}
+                  {% if count == paginator.page %}
+                  <span class="current-page">{{count}}</span>
+                  {% else %}
+                  <a href="/page{{count}}">{{count}}</a>
+                  {% endif %}
+                {% endfor %}
 
-				&bull;
-
-				{% if paginator.next_page %}
-					<a href="{{site.base_url}}/page{{paginator.next_page}}" class="next">Nächste Seite &gt;&gt;</a>
-				{% else %}
-					<span class="previous">Nächste Seite &gt;&gt;</span>
-				{% endif %}
-				</nav>
+              {% if paginator.next_page %}
+                <a class="next" href="/page{{paginator.next_page}}">后页></a>
+              {% else %}
+                <span class="next disabled" >后页&gt;</span>
+              {% endif %}
               (共{{ paginator.total_posts }}篇)
             </div><!---->
             <footer id="footer" class="inner">Copyright &copy; 2013 Aisin's Blog All Rights Reserved.</footer>
