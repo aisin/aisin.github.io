@@ -11,21 +11,12 @@ layout : home
                     <div class="date">
                         <time>{{ post.date | date:"%Y-%m-%d" }}</time>
                     </div>
-                    <!--
-                    <div class="tags">
-                    {% if page.tags %}
-                    tags:
-                    {% for tag in page.tags %}
-                    <a href="/tags/#{{ tag }}" title="{{ tag }}">{{ tag }}</a>&nbsp;
-                    {% endfor %}
-                    {% endif %}
-                    </div>
-                    -->
                 </div>
                 <h1 class="title"><a href="{{ post.url }}" itemprop="url">{{ post.title }}</a></h1>
                 <div class="entry-content">{{ post.description }}</div>
             </article>
             {% endfor %}
+			
             <div id="post-pagination" class="paginator">
 			  {% if paginator.previous_page %}
 				{% if paginator.previous_page == 1 %}
