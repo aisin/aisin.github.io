@@ -18,10 +18,13 @@ category: work
 在控制台运行后得到的值时`true`，为什么是`true`这很容易理解，因为这个匿名函数没有返回值，默认返回的就是`undefined`，求反的结果很自然的就是`true`。所以问题并不在于结果值，而是在于，为什么求反操作能够让一个匿名函数的自调变的合法？
 
 平时我们可能对添加括号来调用匿名函数的方式更为习惯：
+
 ```javascript
 (function () {alert('iifksp')})()        // true
 ```
+
 或者：
+
 ```javascript
 (function () {alert('iifksp')}())        // true
 ```
@@ -33,44 +36,57 @@ category: work
 回到核心问题，为什么能这么做？甚至更为核心的问题是，为什么必须这么做？
 
 其实无论是括号，还是感叹号，让整个语句合法做的事情只有一件，就是**让一个函数声明语句变成了一个表达式。**
+
 ```javascript
 function a() {alert('iifksp')}        // undefined  
 ```
+
 这是一个函数声明，如果在这么一个声明后直接加上括号调用，解析器自然不会理解而报错：
+
 ```javascript
 function a() {alert('iifksp')}()    // SyntaxError: unexpected_token 
 ```
+
 因为这样的代码混淆了函数声明和函数调用，以这种方式声明的函数`a`，就应该以 `a();` 的方式调用。
 
 但是括号则不同，它将一个函数声明转化成了一个表达式，解析器不再以函数声明的方式处理函数`a`，而是作为一个函数表达式处理，也因此只有在程序执行到函数`a`时它才能被访问。
 
 所以，**任何消除函数声明和函数表达式间歧义的方法，都可以被解析器正确识别。**比如：
+
 ```javascript
 var i = function() {return 10}();        // undefined  
 1 && function() {return true}();        // true  
 1, function() {alert('iifksp')}();        // undefined 
 ```
+
 赋值，逻辑，甚至是逗号，各种操作符都可以告诉解析器，这个不是函数声明，它是个函数表达式。并且，对函数一元运算可以算的上是消除歧义最快的方式，感叹号只是其中之一，如果不在乎返回值，这些**一元运算都是有效的：**
+
 ```javascript
 !function() {alert('iifksp')}()        // true
 +function() {alert('iifksp')}()        // NaN
 -function() {alert('iifksp')}()        // NaN
 ~function() {alert('iifksp')}()        // -1
 ```
+
 甚至下面这些关键字，都能很好的工作：
+
 ```javascript
 void function() {alert('iifksp')}()        // undefined  
 new function() {alert('iifksp')}()        // Object  
 delete function() {alert('iifksp')}()        // true
 ```
+
 最后，括号做的事情也是一样的，消除歧义才是它真正的工作，而不是把函数作为一个整体，所以无论括号括在声明上还是把整个函数都括在里面，都是合法的：
+
 ```javascript
 (function() {alert('iifksp')})()        // undefined
 (function() {alert('iifksp')}())        // undefined
 ```
+
 说了这么多，实则在说的一些都是最为基础的概念——语句，表达式，表达式语句，这些概念如同指针与指针变量一样容易产生混淆。虽然这种混淆对编程无表征影响，但却是一块绊脚石随时可能因为它而头破血流。
 
 ##性能
+
 最后讨论下性能。我在jsperf上简单建立了一个测试：http://jsperf.com/js-funcion-expression-speed ，可以用不同浏览器访问，运行测试查看结果。我也同时将结果罗列如下表所示：
 
 最终表明，不同的方式产生的结果并不相同，而且差别很大，因浏览器而异。
