@@ -89,7 +89,7 @@ delete function() {alert('iifksp')}()        // true
 
 ##性能
 
-最后讨论下性能。我在jsperf上简单建立了一个测试：http://jsperf.com/js-funcion-expression-speed ，可以用不同浏览器访问，运行测试查看结果。我也同时将结果罗列如下表所示：
+最后讨论下性能。我在jsperf上简单建立了一个测试：[js function expression speed](http://jsperf.com/js-funcion-expression-speed)，可以用不同浏览器访问，运行测试查看结果。我也同时将结果罗列如下表所示：
 
 最终表明，不同的方式产生的结果并不相同，而且差别很大，因浏览器而异。
 
