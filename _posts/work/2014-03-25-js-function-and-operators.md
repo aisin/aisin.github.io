@@ -3,6 +3,8 @@ layout: post
 title: function与运算符
 description: 在看一些Javascript插件或者方法的时候，经常会看到其前面有一个运算符，解释一下。
 category: work
+tags:
+- Javascript
 ---
 
 ##序言
