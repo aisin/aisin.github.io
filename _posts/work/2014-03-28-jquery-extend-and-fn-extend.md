@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 谈谈jQuery.extend和jQuery.fn.extend的插件写法
+title: 谈谈jQuery.extend和jQuery.fn.extend
 description: jQuery支持自定义的插件有另种写法，即jQuery.extend和jQuery.fn.extend，它们有什么区别呢？
 category: work
 tags:
