@@ -90,6 +90,9 @@ hgroup h1 a:hover{color:#333;text-decoration:none;}
 	.mainHeader{display:none;}
 	.postList section{padding:10px;}
 	.entryList{font-size:16px;}
+	
+	/*Archive & Tags*/
+	.listing,.tag_cloud{font-size:16px;}
 
 }
 
@@ -157,12 +160,12 @@ h3.about {color:#777;margin-top:20px;font-size:22px;margin-bottom:10px}
 .about-link a {margin-right:10px;font-weight:bold;font-style:italic;font-size:13px;color:#E50053}
 
 /**************Tags Page**************/
-.page-title{font-size:20px;border-bottom:1px solid #ccc;padding-bottom:10px;margin:1.5em 0 0.5em 0;}
+.page-title{font-size:20px;border-bottom:1px solid #ccc;padding-bottom:10px;margin:0 0 0.5em;}
 #tag_cloud{margin-bottom:1em;line-height:1.8em;}
 #tag_cloud a:hover{color:#333 !important;text-decoration:none;}
 #tag_cloud a:after{content:"|";}
-.listing-seperator{line-height:2em;font-size:1em;}
-.listing-item{line-height:2em;}
+.listing-seperator{line-height:2em;font-size:1.4em;}
+.listing-item{line-height:2.6em;}
 .listing-item time{color:#999;margin-right:1em;}
 
 /**************目录导航**************/
