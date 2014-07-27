@@ -65,7 +65,6 @@ hgroup h1 a:hover{color:#666;}
 
 .pagination{text-align:center;padding:60px 0;font-size:2em;}
 .pagination a{padding:15px 25px;font-family:Georgia;}
-.pagination.single a{font-size:20px;}
 .pagination .next a{border-left:1px solid #ccc;}
 
 @media screen and (max-width:1024px) and (min-width:640px){
@@ -84,7 +83,6 @@ hgroup h1 a:hover{color:#666;}
 	.main{left:0;width:auto;position:relative;border-left:none;}
 	.mainHeader{display:none;}
 	.postList section{padding:10px;}
-	.pagination.single span{display:block;}
 	.entry{font-size:16px;}
 
 }
