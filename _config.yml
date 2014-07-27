@@ -1,9 +1,19 @@
+#
+# Blog Settings
+#
+
+# Jekyll Settings
 markdown: rdiscount
 pygments: true
-paginate: 4
+paginate: 6
+paginate_path: /page:num
 permalink: /:categories/:title
+baseurl: /
+#lsi: true
 
-author: Aisin
+
+# site
+author_name: Aisin
 title: Aisin's Blog
 url: http://aisin.me
 feed: /atom.xml
