@@ -17,7 +17,7 @@ layout : home
 			</section>
 		{% endfor %}
 	</article>
-	<div class="pagination">
+	<div class="pagination clf">
 		{% if paginator.previous_page %}
 			<span class="previous">
 			{% if paginator.previous_page == 1 %}
@@ -27,39 +27,34 @@ layout : home
 			{% endif %}
 			</span>
 		{% else %}
-			<span class="previous disabled">
-				<span>Previous</span>
-			</span>
+			<span class="previous disabled">Previous</span>
 		{% endif %}
 
-			<ul class="pages">
-				<li>
-				{% if paginator.page == 1 %}
-					<span class="current-page">1</span>
-				{% else %}
-					<a href="http://aisin.me">1</a>
-				{% endif %}
-				</li>
+				
+		{% if paginator.page == 1 %}
+			<span class="current-page">1</span>
+		{% else %}
+			<a href="http://aisin.me">1</a>
+		{% endif %}
+		
 
-				{% for count in (2..paginator.total_pages) %}
-					<li>
-					{% if count == paginator.page %}
-						<span class="current-page">{{ count }}</span>
-					{% else %}
-						<a href="http://aisin.me/page{{ count }}">{{ count }}</a>
-					{% endif %}
-					</li>
-				{% endfor %}
-			</ul>
+		{% for count in (2..paginator.total_pages) %}
+			
+			{% if count == paginator.page %}
+				<span class="current-page">{{ count }}</span>
+			{% else %}
+				<a href="http://aisin.me/page{{ count }}">{{ count }}</a>
+			{% endif %}
+			
+		{% endfor %}
+			
 
 		{% if paginator.next_page %}
 			<span class="next">
 				<a href="{{ paginator.next_page_path }}">Next</a>
 			</span>
 		{% else %}
-			<span class="next disabled">
-				<span>Next</span>
-			</span>
+			<span class="next disabled">Next</span>
 		{% endif %}
 	</div>
 
