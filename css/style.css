@@ -7,7 +7,7 @@
  */
  
 /*=Reset=*/
-html{color:#333; background:#fff; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; text-rendering:optimizelegibility; -moz-osx-font-smoothing:grayscale}
+html{-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; text-rendering:optimizelegibility; -moz-osx-font-smoothing:grayscale}
 html.borderbox *,html.borderbox *:before,html.borderbox *:after{ -moz-box-sizing:border-box; -webkit-box-sizing:border-box; box-sizing:border-box}
 body,ul,li,ol,div,p,span,img,a,form,button,select,input,textarea,h1,h2,h3,h4,h5,h6,dl,dd,table,td,th,hr,blockquote{margin:0;padding:0;}
 img{border:none;}
@@ -93,7 +93,7 @@ hgroup h1 a:hover{color:#666;}
 
 }
 
-.nav-toggle{display:block;width:60px;height:50px;background:#444 url(images/nav.gif) no-repeat -19px -24px;text-indent:-9999em;float:right;}
+.nav-toggle{display:block;width:60px;height:50px;background:#444 url(../images/nav.gif) no-repeat -19px -24px;text-indent:-9999em;float:right;}
 
 
 /*! responsive-nav.js 1.0.32 by @viljamis */
