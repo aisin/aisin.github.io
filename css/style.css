@@ -60,12 +60,12 @@ hgroup h1 a:hover{color:#333;text-decoration:none;}
 
 .postList{padding:0;}
 .postList .postTitle{font-size:18px;margin-bottom:15px;}
-.postList section{padding:40px 0 40px 40px;border-bottom:1px solid #ccc;}
+.postList section{padding:40px 0 25px 40px;border-bottom:1px solid #ccc;}
 .postList section a{color:#666;}
 .postList section a:hover{color:#333;text-decoration:none;}
 .meta,.meta a{font-size:12px;color:#a8a8a8;}
 .entryList{padding:15px 0;font-size:13px;}
-.entryList p{margin-bottom:0;}
+.entryList p{margin-bottom:15px;}
 .aligncenter {display:block; margin-left:auto; margin-right:auto;}
 .alignleft {float:left; display:inline;}
 .alignright {float:right; display:inline;}
