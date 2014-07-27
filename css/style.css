@@ -89,7 +89,7 @@ hgroup h1 a:hover{color:#333;text-decoration:none;}
 	.main{left:0;width:auto;position:relative;border-left:none;}
 	.mainHeader{display:none;}
 	.postList section{padding:10px;}
-	.entry{font-size:16px;}
+	.entryList{font-size:16px;}
 
 }
 

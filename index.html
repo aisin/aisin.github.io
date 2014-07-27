@@ -21,9 +21,9 @@ layout : home
 		{% if paginator.previous_page %}
 			<span class="previous">
 			{% if paginator.previous_page == 1 %}
-				<a href="http://aisin.me">Previous</a>
+				<a href="http://aisin.me">« Previous</a>
 			{% else %}
-				<a href="{{ paginator.previous_page_path }}">Previous</a>
+				<a href="{{ paginator.previous_page_path }}">« Previous</a>
 			{% endif %}
 			</span>
 		{% else %}
@@ -51,10 +51,10 @@ layout : home
 
 		{% if paginator.next_page %}
 			<span class="next">
-				<a href="{{ paginator.next_page_path }}">Next</a>
+				<a href="{{ paginator.next_page_path }}">Next »</a>
 			</span>
 		{% else %}
-			<span class="next disabled">Next</span>
+			<span class="next disabled">Next »</span>
 		{% endif %}
 	</div>
 
