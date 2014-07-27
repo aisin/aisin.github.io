@@ -41,10 +41,10 @@ h6 {font-size:1em;}
 hgroup h1 a{color:#666;display:block;width:100%;height:100px;color:#404040;border-bottom:1px solid #ccc;line-height:100px;text-align:center;}
 hgroup h1 a:hover{color:#333;text-decoration:none;}
 
-#nav{padding:15px 0 15px 25px;border-bottom:1px solid #ccc;}
-#nav .sub-menu{text-indent:2em;}
-#nav .sub-menu .sub-menu{text-indent:4em;}
-#nav .sub-menu .sub-menu .sub-menu{text-indent:6em;}
+.nav{padding:15px 0 15px 25px;border-bottom:1px solid #ccc;}
+.nav .sub-menu{text-indent:2em;}
+.nav .sub-menu .sub-menu{text-indent:4em;}
+.nav .sub-menu .sub-menu .sub-menu{text-indent:6em;}
 #mainMenu li{padding:5px 0;}
 #mainMenu li a{font-size:18px;color:#666;}
 #mainMenu li a:hover{color:#333;text-decoration:none;}
