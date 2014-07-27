@@ -55,12 +55,9 @@ hgroup h1 a:hover{color:#666;}
 .postList .postTitle{font-size:18px;margin-bottom:15px;}
 .postList section{padding:40px 0 40px 40px;border-bottom:1px solid #ccc;}
 .meta,.meta a{font-size:12px;color:#a8a8a8;}
-.entry{padding:15px 0;font-size:13px;}
-.entry p{margin-bottom:1.5em;}
-.entry p:last-child{margin-bottom:0;}
-.entry hr{height:50px;border:none;background:url(images/hr.png) no-repeat center;}
-.entry blockquote{padding:5px 0 5px 15px;border-left:3px solid #ccc;margin-bottom:1.5em;}
-.entry img{max-width:100%;height:auto;}
+.entryList{padding:15px 0;font-size:13px;}
+.entryList p{margin-bottom:1.5em;}
+.entryList p:last-child{margin-bottom:0;}
 .aligncenter {display:block; margin-left:auto; margin-right:auto;}
 .alignleft {float:left; display:inline;}
 .alignright {float:right; display:inline;}
