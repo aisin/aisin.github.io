@@ -2,68 +2,65 @@
 layout : home
 ---
 
-<div class="mid-col">
-    <div class="mid-col-container">
-        <div id="content" class="inner">
-			{% for post in paginator.posts %}
-            <article class="post">
-                <div class="meta">
-                    <div class="date">
-                        <time>{{ post.date | date:"%Y-%m-%d" }}</time>
-                    </div>
-                </div>
-                <h1 class="title"><a href="{{ post.url }}" itemprop="url">{{ post.title }}</a></h1>
-                <div class="entry-content">{{ post.description }}</div>
-            </article>
-            {% endfor %}
-			<!--pagenavi-->
-			<div id="post-pagination" class="pagination">
-			{% if paginator.previous_page %}
-				<span class="previous">
-				{% if paginator.previous_page == 1 %}
-					<a href="http://aisin.me">Previous</a>
-				{% else %}
-					<a href="{{ paginator.previous_page_path }}">Previous</a>
-				{% endif %}
-				</span>
+<div class="main">
+	<header class="mainHeader">
+		<h2 class="desc">世界这乱，装给谁看。</h2>
+	</header>
+	<article class="postList">
+		{% for post in paginator.posts %}
+			<section>
+				<h2 class="postTitle"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+				<div class="meta"><span>{{ post.date | date:"%Y.%m.%d" }}</span></div>
+				<div class="entry">
+					<p>{{ post.description }}</p>
+				</div>
+			</section>
+		{% endfor %}
+	</article>
+	<div class="pagination">
+		{% if paginator.previous_page %}
+			<span class="previous">
+			{% if paginator.previous_page == 1 %}
+				<a href="http://aisin.me">Previous</a>
 			{% else %}
-				<span class="previous disabled">
-					<span>Previous</span>
-				</span>
+				<a href="{{ paginator.previous_page_path }}">Previous</a>
 			{% endif %}
+			</span>
+		{% else %}
+			<span class="previous disabled">
+				<span>Previous</span>
+			</span>
+		{% endif %}
 
-				<ul class="pages">
+			<ul class="pages">
+				<li>
+				{% if paginator.page == 1 %}
+					<span class="current-page">1</span>
+				{% else %}
+					<a href="http://aisin.me">1</a>
+				{% endif %}
+				</li>
+
+				{% for count in (2..paginator.total_pages) %}
 					<li>
-					{% if paginator.page == 1 %}
-						<span class="current-page">1</span>
+					{% if count == paginator.page %}
+						<span class="current-page">{{ count }}</span>
 					{% else %}
-						<a href="http://aisin.me">1</a>
+						<a href="http://aisin.me/page{{ count }}">{{ count }}</a>
 					{% endif %}
 					</li>
+				{% endfor %}
+			</ul>
 
-					{% for count in (2..paginator.total_pages) %}
-						<li>
-						{% if count == paginator.page %}
-							<span class="current-page">{{ count }}</span>
-						{% else %}
-							<a href="http://aisin.me/page{{ count }}">{{ count }}</a>
-						{% endif %}
-						</li>
-					{% endfor %}
-				</ul>
+		{% if paginator.next_page %}
+			<span class="next">
+				<a href="{{ paginator.next_page_path }}">Next</a>
+			</span>
+		{% else %}
+			<span class="next disabled">
+				<span>Next</span>
+			</span>
+		{% endif %}
+	</div>
 
-			{% if paginator.next_page %}
-				<span class="next">
-					<a href="{{ paginator.next_page_path }}">Next</a>
-				</span>
-			{% else %}
-				<span class="next disabled">
-					<span>Next</span>
-				</span>
-			{% endif %}
-			</div>
-			<!--pagenavi-->
-            <footer id="footer" class="inner">Copyright &copy; 2013 Aisin's Blog All Rights Reserved.</footer>
-        </div><!--/#content-->
-    </div><!--/.mid-col-container-->
-</div><!--/.mid-col-->
+</div>
