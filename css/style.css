@@ -16,8 +16,14 @@ body{color:#333;background:#fff;font:13px/1.7 'Helvetica Neue',Helvetica,Arial,S
 .clf{*zoom:1;}
 .clf:after {content: "";display: table;clear: both;}
 .clear{clear:both;}
+/*
 a{color:#333;text-decoration:none;}
 a:hover{color:#666;}
+*/
+a {text-decoration: none;outline-width: 0;color:#2571b8;}
+a:hover {text-decoration: underline;}
+a.external {padding-right:13px;background:url('../images/icons.gif') no-repeat right 1px;}
+a.external:hover {background-position:right -15px;}
 
 h1 {font-size:1.5em;}
 h2 {font-size:1.4em;}
