@@ -16,39 +16,53 @@ layout : home
                 <div class="entry-content">{{ post.description }}</div>
             </article>
             {% endfor %}
-			<!--
-            <div id="post-pagination" class="paginator">
-			  {% if paginator.previous_page %}
+			<!--pagenavi-->
+			<div id="post-pagination" class="pagination">
+			{% if paginator.previous_page %}
+				<span class="previous">
 				{% if paginator.previous_page == 1 %}
-				<a href="/">&lt;前页</a>
+					<a href="http://aisin.me">Previous</a>
 				{% else %}
-				<a href="/page{{paginator.previous_page}}">&lt;前页</a>
+					<a href="{{ paginator.previous_page_path }}">Previous</a>
 				{% endif %}
-			  {% else %}
-				<span class="previous disabled">&lt;前页</span>
-			  {% endif %}
+				</span>
+			{% else %}
+				<span class="previous disabled">
+					<span>Previous</span>
+				</span>
+			{% endif %}
 
-				  {% if paginator.page == 1 %}
-				  <span class="current-page">1</span>
-				  {% else %}
-				  <a href="/">1</a>
-				  {% endif %}
+				<ul class="pages">
+					<li>
+					{% if paginator.page == 1 %}
+						<span class="current-page">1</span>
+					{% else %}
+						<a href="http://aisin.me">1</a>
+					{% endif %}
+					</li>
 
-				{% for count in (2..paginator.total_pages) %}
-				  {% if count == paginator.page %}
-				  <span class="current-page">{{count}}</span>
-				  {% else %}
-				  <a href="/page{{count}}">{{count}}</a>
-				  {% endif %}
-				{% endfor %}
+					{% for count in (2..paginator.total_pages) %}
+						<li>
+						{% if count == paginator.page %}
+							<span class="current-page">{{ count }}</span>
+						{% else %}
+							<a href="http://aisin.me/page{{ count }}">{{ count }}</a>
+						{% endif %}
+						</li>
+					{% endfor %}
+				</ul>
 
-			  {% if paginator.next_page %}
-				<a class="next" href="/page{{paginator.next_page}}">后页&gt;</a>
-			  {% else %}
-				<span class="next disabled" >后页&gt;</span>
-			  {% endif %}
-			  (共{{ paginator.total_posts }}篇)
-			</div>-->
+			{% if paginator.next_page %}
+				<span class="next">
+					<a href="{{ paginator.next_page_path }}">Next</a>
+				</span>
+			{% else %}
+				<span class="next disabled">
+					<span>Next</span>
+				</span>
+			{% endif %}
+			</div>
+			<!--pagenavi-->
             <footer id="footer" class="inner">Copyright &copy; 2013 Aisin's Blog All Rights Reserved.</footer>
         </div><!--/#content-->
     </div><!--/.mid-col-container-->
