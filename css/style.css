@@ -70,9 +70,8 @@ hgroup h1 a:hover{color:#333;text-decoration:none;}
 .alignleft {float:left; display:inline;}
 .alignright {float:right; display:inline;}
 
-.pagination{text-align:center;padding:60px 0;font-size:2em;}
-.pagination a{padding:15px 25px;font-family:Georgia;}
-.pagination .next a{border-left:1px solid #ccc;}
+.pagination{text-align:center;padding:60px 0;font-size:16px;}
+.pagination a,.pagination span{padding:5px;font-family:Georgia;margin:0 5px;}
 
 @media screen and (max-width:1024px) and (min-width:640px){
 	.wrap{width:100%;}
