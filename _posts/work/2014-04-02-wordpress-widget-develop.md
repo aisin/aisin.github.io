@@ -2,7 +2,7 @@
 layout: post
 title: WordPress 小工具的开发教程
 description: WordPress 小工具的开发教程笔记
-category: wordpress
+category: ['work', 'wordpress']
 tags:
 - WordPress
 - PHP
