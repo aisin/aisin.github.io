@@ -2,7 +2,7 @@
 layout: post
 title: WordPress 小工具的开发教程
 description: WordPress 小工具的开发教程笔记
-category: work/wordpress
+category: wordpress
 tags:
 - WordPress
 - PHP
@@ -43,7 +43,7 @@ tags:
 ##调用小工具
 
 ```php
-    <?php if ( is_active_sidebar( 'aisin_home' ) ) { 
-	    dynamic_sidebar( 'aisin_home' ); 
-    }?>
+<?php if ( is_active_sidebar( 'aisin_home' ) ) { 
+	dynamic_sidebar( 'aisin_home' ); 
+} ?>
 ```
