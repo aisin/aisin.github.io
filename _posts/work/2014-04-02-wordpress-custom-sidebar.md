@@ -1,14 +1,15 @@
 ---
 layout: post
-title: WordPress 小工具的开发教程
-description: WordPress 小工具的开发教程笔记
+title: WordPress 让主题支持自定义侧边栏小工具的功能
+description: WordPress 让主题支持自定义侧边栏小工具的功能
 category: ['work', 'wordpress']
 tags:
 - WordPress
 - PHP
 ---
 
-##注册小工具register_sidebar
+##注册侧边栏 register_sidebar
+
 
 ```php
 <?php
@@ -20,7 +21,7 @@ tags:
 	//描述
 	'description'   => '',
 	//分配到小工具 HTML输出 中的CSS选择器名字（默认为空）
-    'class'         => '',
+    	'class'         => '',
 	//小工具之前的html代码
 	'before_widget' => '<li id="%1$s" class="widget %2$s">',
 	//小工具之后的html代码
@@ -30,20 +31,26 @@ tags:
 	//小工具title之后的html代码
 	'after_title'   => '</h2>' ); 
 	
-    //注册小工具
+    //注册侧边栏函数 register_sidebar
     function aisin_add_widget(){
         register_sidebar( $args ); 
     }
-    
-    //添加action
-    add_action( 'widgets_init', 'aisin_add_widget' );
 ?>
 ```
 
-##调用小工具
+##调用侧边栏
+
 
 ```php
 <?php if ( is_active_sidebar( 'aisin_home' ) ) { 
+	dynamic_sidebar( 'aisin_home' ); 
+} ?>
+```
+
+或者：
+
+```php
+<?php if (function_exists('dynamic_sidebar') && dynamic_sidebar('aisin_home')) {
 	dynamic_sidebar( 'aisin_home' ); 
 } ?>
 ```
