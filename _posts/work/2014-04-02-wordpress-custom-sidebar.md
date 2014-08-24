@@ -21,7 +21,7 @@ tags:
 	//描述
 	'description'   => '',
 	//分配到小工具 HTML输出 中的CSS选择器名字（默认为空）
-    	'class'         => '',
+    'class'         => '',
 	//小工具之前的html代码
 	'before_widget' => '<li id="%1$s" class="widget %2$s">',
 	//小工具之后的html代码
