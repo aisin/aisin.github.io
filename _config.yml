@@ -6,6 +6,7 @@
 
 title: "幸福收藏夹"
 github_username: aisin
+author_name: Aisin
 url: http://aisin.me
 baseurl: ""
 feed: /feed.xml
@@ -25,5 +26,3 @@ redcarpet:
     - fenced_code_blocks
     - tables
 paginate: 20
-
-
