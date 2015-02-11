@@ -1,46 +1,16 @@
 ---
-title : Tags
-layout: home
+layout: default
+title: Tags
+permalink: /tags/
 ---
-
-<div class="main">
-	<header class="mainHeader">
-		<h2 class="desc">世界这乱，装给谁看。</h2>
-	</header>
-	<article class="postList">
-		<section>
-        
-			<h1 class="page-title">Tags</h1>
-			<div id='tag_cloud'>
-			{% for tag in site.tags %}
-			<a href="#{{ tag[0] }}" title="{{ tag[0] }}" rel="{{ tag[1].size }}">{{ tag[0] }}</a>
-			{% endfor %}
-			</div>
-
-			<ul class="listing">
-			{% for tag in site.tags %}
-				<li class="listing-seperator" id="{{ tag[0] }}">{{ tag[0] }}</li>
-				{% for post in tag[1] %}
-				<li class="listing-item">
-				<time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-				<a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-				</li>
-				{% endfor %}
-			{% endfor %}
-			</ul>
-
-		</section>
-	</article>
-</div>
-
-<script src="../js/jquery.tagcloud.js" type="text/javascript" charset="utf-8"></script> 
-<script language="javascript">
-$.fn.tagcloud.defaults = {
-    size: {start: 1, end: 1, unit: 'em'},
-      color: {start: '#a9d0f5', end: '#ff3333'}
-};
-
-$(function () {
-    $('#tag_cloud a').tagcloud();
-});
-</script>
+{% for tag in site.tags %}
+  {% assign tag_name = tag | first %}
+  <section class="panel panel-default portlet-item">
+    <header id="{{ tag_name }}" class="panel-heading"><strong>{{ tag_name | capitalize }}</strong></header>
+    <section class="panel-body">
+      {% for post in site.tags[tag_name] %}
+        {% include list_post.html %}
+      {% endfor %}
+    </section>
+  </section>
+{% endfor %}

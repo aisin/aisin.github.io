@@ -1,20 +1,29 @@
 #
-# Blog Settings
+# Site Settings
 #
 
-# Jekyll Settings
-markdown: rdiscount
-pygments: true
-paginate: 4
-paginate_path: /page:num
-permalink: /:categories/:title
-baseurl: /
-#lsi: true
+# Site Config
 
-
-# site
-author_name: Aisin
-title: Aisin's Blog
+title: "幸福收藏夹"
+github_username: aisin
 url: http://aisin.me
-feed: /atom.xml
+baseurl: /
+feed: /feed.xml
 author_info: <a href="http://aisin.me">Aisin</a>
+
+# Jekyll Settings
+
+timezone: Beijing
+paginate_path: /page:num
+highlighter: pygments
+pygments: true
+permalink: /:categories/:title/
+
+markdown: redcarpet
+redcarpet:
+  extensions:
+    - fenced_code_blocks
+    - tables
+paginate: 20
+
+

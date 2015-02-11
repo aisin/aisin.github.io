@@ -1,22 +1,19 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <!--
-    * Author : Aisin ++ http://yiqiing.com
-    -->
-    <meta charset="utf-8">
-	<title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
-	<meta name="author" content="Aisin">
-    <meta name="description" content="Aisin's Blog">
-	<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-	<link rel="stylesheet" media="all" href="/css/style.css" type="text/css">
-	<script type="text/javascript" src="http://upcdn.b0.upaiyun.com/libs/jquery/jquery-1.8.3.min.js"></script>
-	<script type="text/javascript" src="/js/responsive-nav.min.js"></script>
-</head>
-<body>
-
-{{ content }}
-
-</body>
+<html lang="en">
+  {% include head.html %}
+  <body>
+  {% include header.html %}
+  <section id="content">
+    <div class="container m-t-lg m-b-lg">
+      <div class="row">
+        <div class="col-sm-9">
+          <div class="blog-post">
+            {{ content }}
+          </div>
+        </div>
+        {% include sidebar.html %}
+      </div>
+    </div>
+  </section>
+  </body>
 </html>
