@@ -7,7 +7,7 @@
 title: "幸福收藏夹"
 github_username: aisin
 url: http://aisin.me
-baseurl: /
+baseurl: ""
 feed: /feed.xml
 author_info: <a href="http://aisin.me">Aisin</a>
 
