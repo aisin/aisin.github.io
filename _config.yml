@@ -14,7 +14,7 @@ author_info: <a href="http://aisin.me">Aisin</a>
 
 # Jekyll Settings
 
-timezone: Beijing
+timezone: Asia/Shanghai
 paginate_path: /page:num
 highlighter: pygments
 pygments: true
