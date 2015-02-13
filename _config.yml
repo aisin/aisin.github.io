@@ -5,6 +5,7 @@
 # Site Config
 
 title: "幸福收藏夹"
+description: "Aisin's Blog - 幸福收藏夹"
 github_username: aisin
 author_name: Aisin
 baseurl: http://aisin.me
