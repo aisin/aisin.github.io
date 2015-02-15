@@ -1,9 +1,4 @@
 ---
-published: false
----
-
-
----
 layout: post
 title: 谈谈 jQuery.extend 和 jQuery.fn.extend
 date: 2014-03-28 15:23:10
