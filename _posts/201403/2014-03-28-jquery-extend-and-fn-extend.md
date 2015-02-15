@@ -2,7 +2,7 @@
 layout: post
 title: 谈谈 jQuery.extend 和 jQuery.fn.extend
 date: 2014-03-28 15:23:10
-categories: Javascript
+categories: javascript
 tags: jQuery extend
 author: Aisin
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: function 与运算符
 date: 2014-03-25 10:30:00
-categories: Javascript
+categories: javascript
 tags: function
 author: Aisin
 ---
