@@ -11,6 +11,8 @@ author_name: Aisin
 baseurl: http://aisin.me
 feed: /feed.xml
 author_info: <a href="http://aisin.me">Aisin</a>
+cdn_url: http://aisin.qiniudn.com/
+cdn_img: http://aisin.qiniudn.com/images/
 
 # Jekyll Settings
 
