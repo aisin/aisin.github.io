@@ -55,7 +55,9 @@ ENGINE=MyISAM DEFAULT CHARSET=utf8 ;
 打开每个会议室的页面，从数据库中查询出该会议室的所有会议，以数组的形式赋给页面对象的数组属性 `eventData.events` 中，用来显示当前会议室的所有会议。另外查询每个会议室的会议，并统计在今天该会议室有几项尚未结束的会议，用来显示 Badge 数字。
 
 ```php
+<?php
 //打开页面查询各会议室的会议 -- Controller
+
 function index() {
 	$dt['title'] = '内部会议室预定平台';
 	//get M8
@@ -135,6 +137,7 @@ $(function(){
 ![{{ page.title }}]({{site.cdn_img}}201402/ci-meeting-system-2.png)
 
 ```php
+<?php
 //Ajax 写入 -- Controller
 
 function ajadd(){
@@ -192,6 +195,7 @@ function ajadd(){
 ![{{ page.title }}]({{site.cdn_img}}201402/ci-meeting-system-5.png)
 
 ```php
+<?php
 //Ajax更新（拖动）-- Controller
 
 function ajUpdateDrop(){
@@ -254,6 +258,7 @@ function ajUpdateClk($id,$st,$ed,$tp,$ps, $table='m12'){
 ![{{ page.title }}]({{site.cdn_img}}201402/ci-meeting-system-6.png)
 
 ```php
+<?php
 //Ajax删除 -- Controller
 
 function ajdel(){
@@ -293,12 +298,9 @@ function ajdel($id, $table="m12"){
 <input type="hidden" id="userIP" value="<?php echo $onlineip ?>" /><!--Get User IP-->
 ```
 
-在
-
-
 ```php
+<?php
 //iplog.php
-
 $ip = $_POST['ip'];
 $topic = $_POST['tp'];
 $person =  $_POST['ps'];
