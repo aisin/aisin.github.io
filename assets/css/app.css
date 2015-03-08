@@ -736,3 +736,7 @@ html,body{min-height:100%;overflow-x:hidden}
 .hidden-xs.show{display:inherit!important}
 .wrapper-lg{padding:15px}
 }
+
+/*Hire me Navigation*/
+.hire-me{background:#F0563D!important;color:#fff!important;}
+.hire-me:hover{background-color:#F2A298!important;}
