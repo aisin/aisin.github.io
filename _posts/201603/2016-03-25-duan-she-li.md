@@ -2,7 +2,7 @@
 published: true
 layout: post
 title: 关于《断舍离》笔记摘录
-date: {}
+date: 2016-03-25T12:50:18.000Z
 categories: life
 author: Aisin
 ---
