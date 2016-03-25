@@ -1,12 +1,10 @@
 ---
-published: true
 layout: post
 title: 关于《断舍离》笔记摘录
-date: 2016-03-25T12:50:18.000Z
+date: 2016-03-25 12:50:18
 categories: life
 author: Aisin
 ---
-
 
 早上在 V2ex 上看到一个话题：[上周裸辞离职了,快入职了,感想如下](https://www.v2ex.com/t/266149)，感觉说的很好，都是一些肺腑之言。然后往下翻，看到评论区有人回复说：“第七点总结起来就是: 断舍离”。
 
