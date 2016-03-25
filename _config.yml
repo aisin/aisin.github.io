@@ -22,9 +22,15 @@ highlighter: pygments
 pygments: true
 permalink: /:categories/:title/
 
-markdown: redcarpet
-redcarpet:
+markdown: kramdown
+kramdown:
+  input: GFM
   extensions:
-    - fenced_code_blocks
-    - tables
+    - autolink
+    - footnotes
+    - smart
+  use_coderay: true
+  syntax_highlighter: rouge
+  coderay:
+    coderay_line_numbers:  nil
 paginate: 12
