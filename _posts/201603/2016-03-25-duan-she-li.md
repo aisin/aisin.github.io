@@ -1,7 +1,7 @@
 ---
 published: true
 layout: post
-date: {}
+date: 2016-03-25T12:50:18.000Z
 categories: life
 author: Aisin
 ---
