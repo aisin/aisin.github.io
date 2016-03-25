@@ -3,7 +3,7 @@ layout: post
 title: 关于《断舍离》笔记摘录
 date: 2016-03-25 12:58:18
 categories: life
-tags: 
+tags:
 author: Aisin
 ---
 
