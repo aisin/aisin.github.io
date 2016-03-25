@@ -1,10 +1,11 @@
 ---
-published: false
+published: true
 layout: post
-date: 2016-03-25T12:45:18.000Z
+date: {}
 categories: life
 author: Aisin
 ---
+
 
 ## 关于《断离舍》笔记摘录
 
