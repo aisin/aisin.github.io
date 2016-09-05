@@ -11,7 +11,7 @@ author: Aisin
 
 后来在看 Vue-cli 的源码时，看到配置文件里有 proxyTable 属性，感觉应该和代理或者跨域有关。在网上查了一下，果然可以解决这个问题。
 
-在 vuejs-templates，也就是 Vue-cli 的使用的模板插件里，有关于 API proxy 的说明，使用的就是这个参数，介绍详情如下：[API Proxying During Development | Introduction](https://vuejs-templates.github.io/webpack/proxy.html)
+在 vuejs-templates，也就是 Vue-cli 的使用的模板插件里，有关于 API proxy 的说明，使用的就是这个参数，介绍详情如下：[API Proxying During Development](https://vuejs-templates.github.io/webpack/proxy.html)
 
 这个参数主要是一个地址映射表，你可以通过设置将复杂的 url 简化，例如我们要请求的地址是 `example.com/api/lists`，可以按照如下设置：
 
