@@ -8,11 +8,11 @@ title: "幸福收藏夹"
 description: "Aisin's Blog - 幸福收藏夹"
 github_username: aisin
 author_name: Aisin
-baseurl: http://aisin.me
+baseurl: https://aisin.me
 feed: /feed.xml
-author_info: <a href="http://aisin.me">Aisin</a>
-cdn_url: http://aisin.qiniudn.com/
-cdn_img: http://aisin.qiniudn.com/images/
+author_info: <a href="https://aisin.me">Aisin</a>
+cdn_url: //aisin.qiniudn.com/
+cdn_img: //aisin.qiniudn.com/images/
 
 # Jekyll Settings
 
